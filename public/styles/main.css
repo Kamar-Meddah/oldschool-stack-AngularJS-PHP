@@ -34,7 +34,7 @@ input {
 }
 
 .container {
-    height: 100vh;
+    height: calc(100vh - 4rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@ input {
     height: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .navbar {
@@ -58,6 +58,6 @@ input {
     background-color: black;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: calc(100vw - 40px);
     align-items: center;
 }

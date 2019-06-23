@@ -2,11 +2,11 @@
 /**
  * Created by IntelliJ IDEA.
  * User: KamarMEDDAH
- * Date: 22/06/2019
- * Time: 01:46
+ * Date: 23/06/2019
+ * Time: 22:33
  */
+
 date_default_timezone_set("UTC");
 
-setcookie('id',null);
-header("location:/index.php");
+echo json_encode(isset($_COOKIE['id']) && !is_null($_COOKIE['id']));
 die();

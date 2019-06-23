@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular app</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/libs/angularjs.min.js" defer></script>
+    <script src="scripts/libs/angular-router.js" defer></script>
+    <script src="scripts/libs/angular-sanitize.js" defer ></script>
+
+    <script src="scripts/index.js" defer></script>
+
+    <script src="widget/navbar/NavbarComponent.js" defer ></script>
+
+    <script src="auth/services/AuthService.js" defer ></script>
+
+    <script src="auth/login/LoginController.js" defer></script>
+    <script src="auth/account/AccountController.js" defer></script>
+</head>
+<body ng-app="tpweb">
+    <div ng-view></div>
+    <noscript>This app require JavaScript to work please enable it</noscript>
+</body>
+</html>

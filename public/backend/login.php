@@ -29,11 +29,9 @@ $res = $req->fetch();
 if (!is_null($res)) {
     if (password_verify($_POST['password'], $res['password'])) {
         setcookie('id', $res['id'], time() + (24 * 60 * 60));
-        $_SESSION['flash']="Successfully logged";
-        header("location:/account.php");
+        echo json_encode(true);
         die();
     }
 }
-$_SESSION['flash'] = "wrong password";
-header("location:/index.php");
+echo json_encode(false);
 die();
